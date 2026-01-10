@@ -1,5 +1,5 @@
 const firebaseBaseURL =
-  "https://project-iot-98b30-default-rtdb.firebaseio.com";
+  "###";
 
 function fetchData() {
   // Fetch distance
