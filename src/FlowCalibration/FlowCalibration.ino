@@ -1,7 +1,7 @@
 #include <Arduino.h>
 
 // ---------------- Pins ----------------
-#define FLOW_PIN 6 // your YF-S401 sensor pin
+#define FLOW_PIN 6 // YF-S401 sensor pin
 volatile int pulseCount = 0;
 
 // ---------------- Interrupt ----------------

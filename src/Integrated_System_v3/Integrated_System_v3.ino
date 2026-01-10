@@ -6,7 +6,7 @@ const char* ssid = "";          // Name of Wi-Fi, connect devices to the same Wi
 const char* password = "";      // Replace with actual Wi-Fi name and password
 
 // ---------------- Firebase ----------------
-const char* firebaseBaseURL = "https://project-iot-98b30-default-rtdb.firebaseio.com";
+const char* firebaseBaseURL = "";
 
 // ---------------- Pins ----------------
 #define TRIG_PIN 41
