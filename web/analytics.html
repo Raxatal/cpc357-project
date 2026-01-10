@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Analytics Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <h1>Smart Drainage Analytics</h1>
+  <p class="subtitle">Historical Trends & Status Table</p>
+
+  <div class="nav-button">
+    <button onclick="window.location.href='index.html'">Back to Live Dashboard</button>
+  </div>
+
+  <div class="chart-container">
+    <canvas id="distanceChart"></canvas>
+  </div>
+
+  <div class="chart-container">
+    <canvas id="flowChart"></canvas>
+  </div>
+
+  <div class="card">
+    <h2>Recent Readings</h2>
+    <table id="historyTable">
+      <thead>
+        <tr>
+          <th>Timestamp (ms)</th>
+          <th>Distance (cm)</th>
+          <th>Flow (L/min)</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- rows added dynamically -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="analytics.js"></script>
+</body>
+</html>

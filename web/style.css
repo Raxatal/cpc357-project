@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.subtitle {
+  color: #555;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.status {
+  font-weight: bold;
+}
+
+.green {
+  background-color: #c8e6c9;
+}
+
+.yellow {
+  background-color: #fff9c4;
+}
+
+.red {
+  background-color: #ffcdd2;
+}
+
+.nav-button {
+  text-align: center;
+  margin: 20px;
+}
+
+.nav-button button {
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chart-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+}

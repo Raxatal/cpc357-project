@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Drainage Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Smart Drainage Pipe Health Monitoring</h1>
+  <p class="subtitle">SDG 11 – Smart Cities</p>
+
+  <div class="card">
+    <h2>Ultrasonic Distance</h2>
+    <p id="distance">-- cm</p>
+  </div>
+
+  <div class="card">
+    <h2>Water Flow Rate</h2>
+    <p id="flow">-- L/min</p>
+  </div>
+
+  <div class="card status" id="statusCard">
+    <h2>System Status</h2>
+    <p id="statusText">--</p>
+  </div>
+
+  <!-- Navigation Button -->
+  <div class="nav-button">
+    <button onclick="window.location.href='analytics.html'">View Analytics</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
