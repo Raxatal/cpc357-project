@@ -4,7 +4,7 @@
 This project presents an Internet of Things (IoT) based Smart Drainage Blockage Monitoring System
 developed as part of <strong>CPC357: IoT Architecture & Smart Applications</strong>.
 The system is designed to address urban drainage challenges by providing real-time monitoring,
-cloud-based data storage, and web-based visualization, supporting the goals of
+cloud-based data storage, and web-based visualisation, supporting the goals of
 <strong>UN Sustainable Development Goal (SDG) 11 – Sustainable Cities and Communities</strong>.
 </p>
 
@@ -53,7 +53,7 @@ process to determine the appropriate flow sensor calibration factor based on the
 
 <h2>System Architecture</h2>
 
-[System Architecture diagram here]
+<img width="560" height="896" alt="CPC357-CPC357PSA drawio" src="https://github.com/user-attachments/assets/acc77ce4-f092-4a98-9adc-898a6b0308da" />
 
 <hr>
 
@@ -89,7 +89,37 @@ process to determine the appropriate flow sensor calibration factor based on the
 
 <h3>1. Hardware Setup</h3>
 
-[Hardware diagram here]
+<img width="442" height="445" alt="Picture1" src="https://github.com/user-attachments/assets/6ec63535-d70d-4276-86cf-2c1f49be8708" />
+
+<pre>
+  <b>Power Connections (The Rails)</b>
+Maker GND -> Breadboard Negative Power Rail (left)
+Breadboard Negative Power Rail (left) -> Breadboard Negative Power Rail (right)
+Maker 3V3 -> Breadboard Positive Power Rail (left)
+Maker USB -> Breadboard Positive Power Rail (right) 
+Reminder: Do not connect Left and Right Red rails together
+  <b>Ultrasonic Sensor (HC-SR04)</b>
+Ultrasonic Sensor (via Qwiic Cable) -> Maker Feather Port (labeled 21/14)
+  <b>Water Flow Sensor (YF-S401)</b>
+Flow Sensor Red Wire -> Breadboard Positive Power Rail (right) (5V)
+Flow Sensor Black Wire -> Breadboard Negative Power Rail (right)
+Flow Sensor Yellow Wire -> Maker Pin A2
+  <b>LEDs & Buzzer (Alerts)
+  Yellow LED (Warning)</b>
+Yellow LED Long Leg (+) -> Breadboard Row 15
+Breadboard Row 15 -> Maker Pin A4
+Yellow LED Short Leg (-) -> Breadboard Row 16
+Resistor (from Row 16) -> Breadboard Negative Power Rail (left)
+  <b>Red LED (Critical)</b>
+Red LED Long Leg (+) -> Breadboard Row 20
+Breadboard Row 20 -> Maker Pin A5
+Red LED Short Leg (-) -> Breadboard Row 21
+Resistor (from Row 21) -> Breadboard Negative Power Rail (left)
+  <b>Buzzer Module</b>
+Buzzer VCC -> Breadboard Row 25 -> Breadboard Positive Power Rail (left) (3.3V)
+Buzzer I/O -> Breadboard Row 26 -> Maker Pin 47
+Buzzer GND -> Breadboard Row 27 -> Breadboard Negative Power Rail (left)
+</pre>
 
 <h3>2. Firmware Setup</h3>
 <ul>
@@ -118,7 +148,7 @@ process to determine the appropriate flow sensor calibration factor based on the
 <h2>Data Visualization</h2>
 
 <p>
-The web dashboard displays real-time sensor readings including distance, flow rate, and system
+The web dashboard displays real-time sensor readings, including distance, flow rate, and system
 status. An analytics page provides historical charts and a table of recent readings, allowing
 users to observe trends and potential early warning signs even when no immediate blockage is detected.
 Users can switch between these two interfaces via a navigation button.
